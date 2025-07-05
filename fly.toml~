@@ -4,7 +4,7 @@
 #
 
 app = 'sbert-similarity-service'
-primary_region = 'sjc'
+primary_region = 'bom'
 
 [build]
 
