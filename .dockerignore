@@ -5,5 +5,12 @@
 
 # flyctl launch added from .venv\.gitignore
 # created by virtualenv automatically
-.venv\**\*
-fly.toml
+.venv/
+__pycache__/
+*.pyc
+*.pkl
+*.zip
+*.md
+glove.6B.300d.txt
+sentence-transformers/
+downloads/
