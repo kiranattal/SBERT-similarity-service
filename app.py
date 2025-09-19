@@ -24,6 +24,7 @@ class SimilarityScore(BaseModel):
 
 @app.post("/similarity", response_model=List[SimilarityScore])
 async def calculate_similarity(payload: SimilarityRequest):
+    print("Inside similarity api")
     current_embedding = model.encode(payload.current.text, convert_to_tensor=True)
     others_text = [t.text for t in payload.others]
     others_keys = [t.key for t in payload.others]
